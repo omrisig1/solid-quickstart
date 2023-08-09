@@ -4,16 +4,17 @@ import Counter from "~/components/Counter";
 export default function Home() {
   return (
     <main>
-      <Title>Hello World</Title>
-      <h1>Hello world OMRI2!</h1>
-      <Counter />
-      <p>
-        Visit{" "}
-        <a href="https://start.solidjs.com" target="_blank">
-          start.solidjs.com
-        </a>{" "}
-        to learn how to build SolidStart apps.
-      </p>
+        <head>
+            <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Random String Generator</title>
+                    <script src="../components/script.js"></script>
+        </head>
+        <body>
+        <h1>Random String Generator</h1>
+        <button id="generateBtn">Generate Random String</button>
+        <input type="text" id="randomString" readonly>
+        </body>
     </main>
   );
 }
